@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+/* Стиль для Карусели с градиентным фоном */
+.carousel-item {
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.slide-bg-1 {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+}
+
+.slide-bg-2 {
+    background: linear-gradient(135deg, #065f46 0%, #047857 50%, #059669 100%);
+}
+
+.slide-bg-3 {
+    background: linear-gradient(135deg, #831843 0%, #9d174d 50%, #be185d 100%);
+}
+
+.carousel-caption {
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 2rem;
+    bottom: 12%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-header {
+    position: relative;
+    padding-bottom: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.section-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: #2563eb;
+    border-radius: 2px;
+}
+
+.section-header.center-header::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25);
+}
+
+.badge-status {
+    font-size: 0.85rem;
+    padding: 0.4em 0.75em;
+}
